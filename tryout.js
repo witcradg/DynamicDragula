@@ -12,7 +12,7 @@ if (Meteor.isClient) {
                     Meteor.call('swapTeams', playerId, targetTeamId);
                 }
             });
-        }, 1000);
+        }, 4000);
     });
 
     Template.teams.helpers({
