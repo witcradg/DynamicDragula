@@ -1,0 +1,31 @@
+body {
+    background:#000000;
+    color: #999999;
+}
+
+h1.main {
+    margin-top: -20px;
+}
+
+h3.news {
+    margin-top: -12px;
+}
+
+.roundcorners {
+    background:rgba(255,255,255,0.08);
+	margin-top: 30px;
+    border-radius: 25px;
+    border: 1px solid #000000;
+	z-index: 10;
+}
+
+#footer {
+    background:rgba(0,0,0,0.8);
+	font-size:80%;
+    clear:both;
+    margin: 3px auto;
+    padding:20px 0 20px 0;
+    border-radius:25px;
+    border: 1px solid;
+    border-color: #000000;
+}

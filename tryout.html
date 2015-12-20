@@ -1,0 +1,44 @@
+<head>
+    <title> Tryout </title>
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+</head>
+
+<body>
+<h1>Meteor Dragula </h1>
+<h3>with dynamically generated containers</h3>
+
+{{> teams}}
+</body>
+
+<template name="teams">
+    <div class="col-xs-offset-1 col-xs-10 col-sm-offset-2 col-sm-8">
+        <div class="container" style="margin-bottom: 100px;">
+            <div class="col-sm-12 col-md-8 roundcorners">
+                {{#each theTeams}}
+                    <div class="col-xs-4">
+                        <h3>{{name}}</h3>
+                    </div>
+                    <div class="col-xs-12">
+                        <div class="container dragula-container">
+                            {{#each players}}
+                                <div id="setupTPlayer">
+                                    <a href="#">
+                                        <h3>{{player_number}} {{player_name}}</h3>
+                                    </a>
+                                </div>
+                            {{/each}}
+                        </div>
+                    </div>
+                {{/each}}
+            </div>
+            <div class="col-sm-12 col-md-4 roundcorners" style="height: 100%">
+                <div class='col-sm-12 col-md-4 roundcorners container dragula-container news'
+                     style="position: fixed">
+                    <p class="lead">Move players between teams directly or
+                        move them here temporarily to allow you to scroll down the page></p>
+                </div>
+            </div>
+        </div>
+    </div>
+</template>
+
