@@ -1,5 +1,5 @@
 # DynamicDragula
-This is a Meteor example using Dragula with dynamically created containers. 
+This is a Meteor example using Dragula for drag and drop between dynamically created containers. 
 
 I created this project to 
   - to show an issue I'm having with Dragula
