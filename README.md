@@ -7,7 +7,7 @@ I created this project to
   - to present Dragula sample code that I did not find online with the hope someone will find it useful 
 
 The issue:
-  Code that works with a mouse does not work with touchscreen devices. 
+  ~~Code that works with a mouse does not work with touchscreen devices.~~ 
   [It turned out this was as simple as the setTimeout aroundthe dragula call]
   
 Caveat:
